@@ -1,0 +1,166 @@
+/* Import Roboto Regular (400) */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Import Roboto Bold (700) */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply Roboto as the default font */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  background-color: #f0f0f0;
+}
+.app {
+  width: 100%;
+
+}
+.main-img {
+  width: 100%;
+}
+main {
+  padding: 20px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+p {
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  list-style: none;
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+ul li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/icon-list.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+.form label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #333;
+}
+.form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form button {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-family: 'Roboto', Arial, sans-serif;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 24px 0 rgba(255, 98, 87, 0.15);
+}
+.form button:hover {
+  background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+  box-shadow: 0 8px 24px 0 rgba(255, 98, 87, 0.25);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    width: 100vw;
+  }
+  .app {
+    margin: auto 0;
+    background-color: whitesmoke;
+    border-radius: 15px;
+
+    max-width: 1000px;
+  }
+  ul {
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .form {
+    width: 100%;
+  }
+  .form input, .form button {
+    width: 100%;
+  }
+  .app {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+    padding: 30px;
+    gap: 30px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    margin: auto 0;
+  }
+  .text-section, form {
+    width: 90%;
+  }
+  input {
+    height: 50px;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
