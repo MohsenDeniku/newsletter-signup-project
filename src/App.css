@@ -108,7 +108,23 @@ ul li::before {
   box-shadow: 0 8px 24px 0 rgba(255, 98, 87, 0.25);
   cursor: pointer;
 }
+.footer-text {
+  font-size: 1.3rem;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #333;
+  padding: 15px;
+  color: white;
+  margin-top: 0;
+}
+.footer-text a {
+  color: #ff6a3a;
+  text-decoration: none;
+  font-weight: 700;
 
+}
 @media (min-width: 768px) {
   body {
     display: flex;
