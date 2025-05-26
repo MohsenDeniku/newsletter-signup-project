@@ -36,7 +36,7 @@ export default function App() {
       </div>
       <footer>
         <p className="footer-text">
-          Made by <a href="www.linkedin.com/in/mohsen-deniku">Mohsen Deniku</a>.
+          Made by <a target="_blank" href="https://www.linkedin.com/in/mohsen-deniku">Mohsen Deniku</a>.
         </p>
       </footer>
     </>
